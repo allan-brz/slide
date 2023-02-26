@@ -1,6 +1,5 @@
-import Sobre from './slide.js';
+import { SlideNav } from './slide.js';
 
-const sobre = new Sobre('.slide', '.slide-wrapper');
-sobre.init();
-sobre.changeSlide(0);
-sobre.transition();
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addArrow('.prev', '.next');
