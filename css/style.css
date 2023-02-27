@@ -64,3 +64,47 @@ img {
 [data-control='slide'] li a:hover {
   background: #ed5b59;
 }
+
+.custom-controls {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-controls li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px;
+}
+
+.arrow-nav button {
+  color: white;
+  border: none;
+  background: #febb60 url(../img/arrow.svg) center center no-repeat;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+}
+
+.arrow-nav .prev {
+  transform: rotate(-180deg);
+}
